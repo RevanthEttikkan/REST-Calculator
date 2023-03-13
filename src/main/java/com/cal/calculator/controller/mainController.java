@@ -16,6 +16,7 @@ public class mainController {
 	@GetMapping("{no1}/{operation}/{no2}")
 	public double calculation (@PathVariable double no1,@PathVariable double no2,@PathVariable String operation ) throws InvalidArgException {
 	
+		
 		switch(operation) {
 		case "add":
 			return no1+no2;
